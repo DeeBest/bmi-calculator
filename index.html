@@ -15,14 +15,13 @@
     <main>
       <div id="container">
         <span>Your Height(cm):</span>
-        <input type="number" id="height-input" value="190">
+        <input type="number" id="height-input" maxlength="3" />
         <span>Your Weight(kg):</span>
-        <input type="number" id="weight-input" value="80">
+        <input type="number" id="weight-input" maxlength="4" />
         <button id="calculate-bmi-btn">Calculate BMI</button>
-        <input disabled id="results-output">
-        <span id="weight-condition-output">Weight Condition:</span>
+        <input disabled id="results-output" />
+        <input disabled id="weight-condition-output" />
       </div>
-    
     </main>
     <footer>
       <p id="footer-paragraph"></p>

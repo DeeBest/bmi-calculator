@@ -20,4 +20,14 @@ function calculateBmiFunction() {
   const bmiValue = weightInputValue / (heightInMeters * heightInMeters);
 
   resultsOutput.value = `Your BMI is ${bmiValue.toFixed(2)}.`;
+
+  if (bmiValue < 18.5) {
+    weightConditionOutput.value = 'Weight Condition: Under Weight';
+  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+    weightConditionOutput.value = 'Weight Condition: Normal Weight';
+  } else if (bmiValue >= 25 && bmiValue <= 29.9) {
+    weightConditionOutput.value = 'Weight Condition: Over Weight';
+  } else {
+    weightConditionOutput.value = 'Weight Condition: Obesity';
+  }
 }

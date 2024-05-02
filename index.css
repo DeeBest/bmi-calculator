@@ -122,6 +122,10 @@ button:hover {
   transform: scale(0.98);
 }
 
+#weight-condition-output {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 560px) {
   #container {
     width: 100%;
